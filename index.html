@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Hover</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="main.js" type="module"></script>
+    <title>My Favorite Critters</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="app">
-        {{message}}
+    <div id='app'>
+        <h1>{{header}}</h1>
+        <div id="critter1">
+            <h2>{{critter1}}</h2>
+            <img :class="critter1Style" :src="myScruffieImage" @mouseover="updateScruffie(1)" @mouseleave="resetScruffie()" height="335" width="225">
+        </div>
+        <div id="critter2">
+            <h2>{{critter2}}</h2>
+            <img :class="critter2Style" :src="myHarleyImage" @mouseover="updateHarley(3)" @mouseleave="resetHarley()" height="335" width="225">
+        </div>
+        <div id="critter3">
+            <h2>{{critter3}}</h2>
+            <img :class="critter3Style" :src="myMrMooImage" @mouseover="updateMrMoo(5)" @mouseleave="resetMrMoo()" height="335" width="225">
+        </div>
+        <div id="critter4">
+            <h2>{{critter4}}</h2>
+            <img :class="critter4Style" :src="myGarfieldImage" @mouseover="updateGarfield(7)" @mouseleave="resetGarfield()" height="335" width="225">
+        </div>
     </div>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
