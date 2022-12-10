@@ -1,24 +1,39 @@
+:root {
+    --startColor: black;
+    --switchColor: crimson;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+                    Verdana, sans-serif;
+}
+div #critter1, #critter2, #critter3, #critter4 {
+    display: inline-block;
+    padding: 3em;
+}
+h1, h2 {
+    text-align: center;
+}
 .critter1Style {
-    border: 3pt solid crimson;
+    border: 3pt solid var(--startColor);
 }
 .critter1SwitchStyle {
-    border: 3pt solid cornflowerblue;
+    border: 3pt solid var(--switchColor);
 }
 .critter2Style {
-    border: 3pt solid crimson;
+    border: 3pt solid var(--startColor);
 }
 .critter2SwitchStyle {
-    border: 3pt solid cornflowerblue;
+    border: 3pt solid var(--switchColor);
 }
 .critter3Style {
-    border: 3pt solid crimson;
+    border: 3pt solid var(--startColor);
 }
 .critter3SwitchStyle {
-    border: 3pt solid cornflowerblue;
+    border: 3pt solid var(--switchColor);
 }
 .critter4Style {
-    border: 3pt solid crimson;
+    border: 3pt solid var(--startColor);
 }
 .critter4SwitchStyle {
-    border: 3pt solid cornflowerblue;
+    border: 3pt solid var(--switchColor);
 }
