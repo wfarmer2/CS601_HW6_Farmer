@@ -5,13 +5,23 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
                     Verdana, sans-serif;
+    background-color: gainsboro;
 }
 div #critter1, #critter2, #critter3, #critter4 {
     display: inline-block;
     padding: 3em;
 }
-h1, h2 {
+h1, h2, p {
     text-align: center;
+}
+h1, h2 {
+    color: white;
+    background-color: var(--switchColor);
+    border: 3pt solid var(--startColor);
+    border-radius: 3pt;
+}
+p {
+    font-style: italic;
 }
 .critter1Style {
     border: 3pt solid var(--startColor);

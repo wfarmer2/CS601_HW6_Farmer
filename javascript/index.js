@@ -16,6 +16,7 @@ Vue.createApp({
   data() {
     return {
       header: 'My Favorite Critters',
+      message: 'Hover over each image to see what each critter looked like when they were younger!',
       critter1: 'Scruffie',
       critter2: 'Harley',
       critter3: 'Mr. Moo',
@@ -67,6 +68,7 @@ Vue.createApp({
   },
   template: `
   <h1>{{header}}</h1>
+  <p>{{message}}</p>
         <div id="critter1">
             <h2>{{critter1}}</h2>
             <img :class="critter1Style" :src="myScruffieImage" @mouseover="updateScruffie(1)" @mouseleave="resetScruffie()" height="335" width="225">
