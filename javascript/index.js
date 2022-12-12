@@ -1,4 +1,4 @@
-
+// create and define variables for images
 let scruffie_long = "./images/scruffie_long_hair.jpg";
 let scruffie_short = "./images/scruffie_short_hair.jpg";
 let harley_young = "./images/harley_young.jpg";
@@ -8,9 +8,11 @@ let mr_moo_older = "./images/mr_moo_older.jpg";
 let garfield_young = "./images/garfield_young.jpg";
 let garfield_older = "./images/garfield_older.jpg";
 
+// create an array of images
 const my_pictures = [scruffie_short, scruffie_long, harley_smile, harley_young, mr_moo_older,
                     mr_moo_young, garfield_older, garfield_young];
-
+                    
+// create new view application
 Vue.createApp({
   compononets: {},
   data() {

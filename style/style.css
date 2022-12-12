@@ -2,6 +2,7 @@
     --startColor: black;
     --switchColor: crimson;
 }
+/* body and header styling*/ 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
                     Verdana, sans-serif;
@@ -23,6 +24,7 @@ h1, h2 {
 p {
     font-style: italic;
 }
+/* critter styling*/ 
 .critter1Style {
     border: 3pt solid var(--startColor);
 }
